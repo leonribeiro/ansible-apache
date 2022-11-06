@@ -1,0 +1,8 @@
+- hosts: ubuntu-apache
+  tasks:
+  - name: Instalação do Apache
+    apt:
+      pkg: 
+      - apache2
+      update_cache: yes
+    become: yes
